@@ -1,0 +1,2 @@
+recursive-include trame_router/module/serve *.min.js
+include trame_router/LICENSE
