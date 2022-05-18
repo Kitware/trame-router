@@ -28,3 +28,8 @@ class RouterViewLayout(AbstractLayout):
             template_name=template_name,
             **kwargs,
         )
+
+
+__all__ = [
+    "RouterViewLayout",
+]

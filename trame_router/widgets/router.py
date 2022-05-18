@@ -79,3 +79,9 @@ class RouterView(HtmlElement):
             "fallback",
         ]
         self.server.state.setdefault(STATE_ROUTES_KEY, [])
+
+
+__all__ = [
+    "RouterLink",
+    "RouterView",
+]
