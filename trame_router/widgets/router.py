@@ -48,6 +48,24 @@ class HtmlElement(AbstractElement):
 
 
 class RouterLink(HtmlElement):
+    """
+    RouterLink for navigating to a different page
+    `<router-link />  <https://v3.router.vuejs.org/api/#router-link-props>`_
+
+    :param to:
+    :param replace:
+    :param append:
+    :param tag:
+    :param active_class:
+    :param exact:
+    :param exact_path:
+    :param exact_path_active_class:
+    :param event:
+    :param exact_active_class:
+    :param aria_current_value:
+    :param custom:
+
+    """
     def __init__(self, children=None, **kwargs):
         super().__init__("router-link", children, **kwargs)
         self._attr_names += [
@@ -61,22 +79,23 @@ class RouterLink(HtmlElement):
             "exact_path_active_class",
             "event",
             "exact_active_class",
-            "aria_current_value" "custom",
+            "aria_current_value",
         ]
 
 
 class RouterView(HtmlElement):
+    """
+    RouterView is the place-holder element where custom content will
+    be displayed based on the route.
+    `<router-view />  <https://v3.router.vuejs.org/api/#router-view-props>`_
+
+    :param name:
+
+    """
     def __init__(self, children=None, name="default", **kwargs):
         super().__init__("router-view", children, **kwargs)
         self._attr_names += [
             "name",
-            "mode",
-            "base",
-            ("link_active_class", "linkActiveClass"),
-            ("link_exact_active_class", "linkExactActiveClass"),
-            ("scroll_behavior", "scrollBehavior"),
-            ("parse_query", "parseQuery"),
-            "fallback",
         ]
         self.server.state.setdefault(STATE_ROUTES_KEY, [])
 

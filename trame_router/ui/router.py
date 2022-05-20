@@ -14,6 +14,13 @@ def path_to_name(path: str):
 
 
 class RouterViewLayout(AbstractLayout):
+    """
+    Layout to be used for defining content of a given route
+
+    :param _server: Server on which to be bound
+    :param path: Route path to be linked to ('/foo' or '/bar/:id')
+    :param name: Name for that path. (default: 'default')
+    """
     def __init__(self, _server, path, name="default", **kwargs):
         template_name = path_to_name(path)
         register_route(
