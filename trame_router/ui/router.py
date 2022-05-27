@@ -21,6 +21,7 @@ class RouterViewLayout(AbstractLayout):
     :param path: Route path to be linked to ('/foo' or '/bar/:id')
     :param name: Name for that path. (default: 'default')
     """
+
     def __init__(self, _server, path, name="default", **kwargs):
         template_name = path_to_name(path)
         register_route(

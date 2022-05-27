@@ -1,4 +1,3 @@
-import json
 from trame_client.widgets.core import AbstractElement
 from trame_router import module
 
@@ -66,6 +65,7 @@ class RouterLink(HtmlElement):
     :param custom:
 
     """
+
     def __init__(self, children=None, **kwargs):
         super().__init__("router-link", children, **kwargs)
         self._attr_names += [
@@ -92,6 +92,7 @@ class RouterView(HtmlElement):
     :param name:
 
     """
+
     def __init__(self, children=None, name="default", **kwargs):
         super().__init__("router-view", children, **kwargs)
         self._attr_names += [

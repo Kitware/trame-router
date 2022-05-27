@@ -2,7 +2,7 @@ trame-router brings multi-page navigation to trame
 ===========================================================================
 
 Trame-router extend trame **widgets** and **ui** with **Vue Router** components and helper to streamline its usage with trame.
-Vue Router is the offical router for Vue.js on which trame is based.
+Vue Router is the official router for Vue.js on which trame is based.
 
 
 Installing

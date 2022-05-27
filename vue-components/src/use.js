@@ -7,7 +7,7 @@ export default {
     // Get our own custom vuetify
     Vue.use(VueRouter);
 
-    // Configue the root view option
+    // Configure the root view option
     OPTIONS.router = new VueRouter(options);
   },
   getOptions() {
