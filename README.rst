@@ -1,6 +1,10 @@
 trame-router brings multi-page navigation to trame
 ===========================================================================
 
+.. image:: https://github.com/Kitware/trame-router/actions/workflows/test_and_release.yml/badge.svg
+    :target: https://github.com/Kitware/trame-router/actions/workflows/test_and_release.yml
+    :alt: Test and Release
+
 Trame-router extend trame **widgets** and **ui** with **Vue Router** components and helper to streamline its usage with trame.
 Vue Router is the official router for Vue.js on which trame is based.
 
