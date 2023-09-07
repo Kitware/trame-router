@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v2.1.0 (2023-09-07)
+
+### Feature
+
+* **vue3:** Support for vue3 ([`482b717`](https://github.com/Kitware/trame-router/commit/482b717f0a8269bcf1956304cd65c5c1b43e0457))
+
 ## v2.0.2 (2023-02-23)
 ### Fix
 * **version:** Add __version__ ([`fc781dc`](https://github.com/Kitware/trame-router/commit/fc781dc3ba04b8b3ed83015e406fe7b2e9af59d6))
