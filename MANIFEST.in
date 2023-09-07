@@ -1,2 +1,3 @@
-recursive-include trame_router/module/serve *.min.js
+recursive-include trame_router/module/vue2 *.min.js
+graft trame_router/module/vue3
 include trame_router/LICENSE
