@@ -2,6 +2,12 @@
 
 <!--next-version-placeholder-->
 
+## v2.1.1 (2024-02-04)
+
+### Fix
+
+* **routes:** Properly load routes at startup ([`8572d38`](https://github.com/Kitware/trame-router/commit/8572d38c1fdaa37d2a5b2d6dc63f5e54b4fefc1d))
+
 ## v2.1.0 (2023-09-07)
 
 ### Feature
