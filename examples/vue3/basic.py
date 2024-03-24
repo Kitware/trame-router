@@ -62,7 +62,5 @@ with SinglePageWithDrawerLayout(server) as layout:
                 title=("`Bar: Id ${id}`",),
             )
 
-        print(c)
-
 if __name__ == "__main__":
     server.start()

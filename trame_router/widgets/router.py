@@ -19,13 +19,10 @@ def flush_routes(app):
     routes = []
 
     for path, components in data.items():
-        # container = {}
-        # routes.append({ "path": path, "components": container })
-        # for name, template in components.items():
-        #     container[name] = { "template": template }
-        routes.append(
-            {"path": path, "component": {"template": components.get("default")}}
-        )
+        container = {}
+        routes.append({"path": path, "components": container})
+        for name, template in components.items():
+            container[name] = {"template": template}
 
     app.state[STATE_ROUTES_KEY] = routes
 
@@ -94,7 +91,7 @@ class RouterView(HtmlElement):
     """
 
     def __init__(self, children=None, name="default", **kwargs):
-        super().__init__("router-view", children, **kwargs)
+        super().__init__("router-view", children, name=name, **kwargs)
         self._attr_names += [
             "name",
         ]
