@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v2.2.0 (2024-03-24)
+
+### Feature
+
+* **name-route:** Add support for named route ([`487b03f`](https://github.com/Kitware/trame-router/commit/487b03fc93ff2d80bdbe48b6ddf632271e1fe139))
+
+### Documentation
+
+* **example:** Remove debug print ([`ece619b`](https://github.com/Kitware/trame-router/commit/ece619b1ece57a7a0eb7984a13dd772b3cc1b86d))
+
 ## v2.1.1 (2024-02-04)
 
 ### Fix
