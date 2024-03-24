@@ -49,13 +49,5 @@ with DivLayout(server) as layout:
     with html.Div("content", style="border: solid 1px black;"):
         router.RouterView(name="content")
 
-    print(layout)
-
-
-@ctrl.add("on_server_ready")
-def debug(trame__routes, **state):
-    print(json.dumps(trame__routes, indent=2))
-
-
 if __name__ == "__main__":
     server.start()
