@@ -1,3 +1,4 @@
+import os
 from trame_client.ui.core import AbstractLayout
 from trame_client.widgets.html import Div
 from trame_client.widgets.trame import ServerTemplate
@@ -36,6 +37,9 @@ class RouterViewLayout(AbstractLayout):
             template_name=template_name,
             **kwargs,
         )
+
+        # Assign routing mode: "hash" or "html5"
+        _server.state.setdefault("trame__route_mode", os.environ.get("TRAME_ROUTER_HISTORY_MODE", "hash"))
 
 
 __all__ = [
