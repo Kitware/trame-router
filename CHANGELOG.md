@@ -2,6 +2,16 @@
 
 <!--next-version-placeholder-->
 
+## v2.3.0 (2024-08-05)
+
+### Feature
+
+* **history:** Add support for html5 mode when using vue3 ([`6b1e122`](https://github.com/Kitware/trame-router/commit/6b1e122682c2158a8cad4f5c733eace8165d3739))
+
+### Documentation
+
+* **examples:** Add more examples ([`616810e`](https://github.com/Kitware/trame-router/commit/616810e33b0e4d94c69e92795b67d970d40ee6a5))
+
 ## v2.2.0 (2024-03-24)
 
 ### Feature
