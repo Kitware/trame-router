@@ -65,7 +65,7 @@ Environment variables
 -----------------------------------------------------------
 
 With vue3 and docker, trame-router can leverage the html5 history mode but by default we use the "hash" mode.
-To enable it, you need to define a __TRAME_ROUTER_HISTORY_MODE__ environment variable that should either be set to "html5" or "hash".
+To enable it, you need to define a **TRAME_ROUTER_HISTORY_MODE** environment variable that should either be set to "html5" or "hash".
 This can only work if using our docker bundle or with a proper web server configuration when delivering the static HTML/JS/CSS content yourself.
 
 
