@@ -39,7 +39,9 @@ class RouterViewLayout(AbstractLayout):
         )
 
         # Assign routing mode: "hash" or "html5"
-        _server.state.setdefault("trame__route_mode", os.environ.get("TRAME_ROUTER_HISTORY_MODE", "hash"))
+        _server.state.setdefault(
+            "trame__route_mode", os.environ.get("TRAME_ROUTER_HISTORY_MODE", "hash")
+        )
 
 
 __all__ = [
