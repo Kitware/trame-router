@@ -1,4 +1,6 @@
-trame-router brings multi-page navigation to trame
+.. |pypi_download| image:: https://img.shields.io/pypi/dm/trame-router
+
+trame-router enable multi-page navigation |pypi_download|
 ===========================================================================
 
 .. image:: https://github.com/Kitware/trame-router/actions/workflows/test_and_release.yml/badge.svg
