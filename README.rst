@@ -24,7 +24,7 @@ trame-router can be installed with `pip <https://pypi.org/project/trame-router/>
 Usage
 -----------------------------------------------------------
 
-The `Trame Tutorial <https://kitware.github.io/trame/docs/tutorial.html>`_ is the place to go to learn how to use the library and start building your own application.
+The `Trame Tutorial <https://kitware.github.io/trame/guide/tutorial>`_ is the place to go to learn how to use the library and start building your own application.
 
 The `API Reference <https://trame.readthedocs.io/en/latest/index.html>`_ documentation provides API-level documentation.
 
@@ -81,7 +81,7 @@ This license has been chosen to match the one use by `Vue Router <https://github
 Community
 -----------------------------------------------------------
 
-`Trame <https://kitware.github.io/trame/>`_ | `Discussions <https://github.com/Kitware/trame/discussions>`_ | `Issues <https://github.com/Kitware/trame/issues>`_ | `RoadMap <https://github.com/Kitware/trame/projects/1>`_ | `Contact Us <https://www.kitware.com/contact-us/>`_
+`Trame <https://kitware.github.io/trame/>`_ | `Discussions <https://github.com/Kitware/trame/discussions>`_ | `Issues <https://github.com/Kitware/trame/issues>`_ | `Contact Us <https://www.kitware.com/contact-us/>`_
 
 .. image:: https://zenodo.org/badge/410108340.svg
     :target: https://zenodo.org/badge/latestdoi/410108340
