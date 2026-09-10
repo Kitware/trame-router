@@ -48,6 +48,7 @@ include = [
     "/src/**/*.py",
     "/src/trame_router/module/vue3/*.js",
     "/src/trame_router/module/vue2/*",
+    "/src/trame_router/LICENSE",
 ]
 
 [tool.hatch.build.targets.wheel]
