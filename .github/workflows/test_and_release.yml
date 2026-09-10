@@ -130,7 +130,7 @@ jobs:
 
       - name: Python Semantic Release
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run:
           uvx --from "python-semantic-release==10.6.2" --with pip
           semantic-release -v version --commit --tag --vcs-release --changelog
