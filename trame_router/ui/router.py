@@ -1,7 +1,7 @@
 import os
 from trame_client.ui.core import AbstractLayout
-from trame_client.widgets.html import Div
-from trame_client.widgets.trame import ServerTemplate
+from trame.widgets.html import Div
+from trame.widgets.client import ServerTemplate
 from trame_router.widgets.router import register_route
 
 CHAR_TO_CONVERT = "/-:*"
