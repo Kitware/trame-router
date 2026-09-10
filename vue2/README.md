@@ -1,6 +1,7 @@
 # trame-router
 
-This directory capture the Vue Router bundling of its components to work with trame.
+This directory capture the Vue Router bundling of its components to work with
+trame.
 
 ## Setup
 
