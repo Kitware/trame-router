@@ -1,0 +1,102 @@
+[project]
+name = "trame-router"
+version = "2.3.0"
+description = "Vue Router widgets for trame"
+authors = [{ name = "Kitware Inc." }]
+dependencies = [
+    "trame-server>=4,<5",
+    "trame-client>=4,<5",
+    "trame-common>=1.2.7,<2",
+    "wslink>=2.5.7",
+    "pyyaml",                  # for trame.tools.widgets
+]
+requires-python = ">=3.10"
+readme = "README.rst"
+license = { text = "MIT" }
+keywords = ["Python", "Interactive", "Web", "Application", "Framework"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Environment :: Web Environment",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Software Development :: Libraries :: Application Frameworks",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pre-commit",
+    "ruff",
+    "pytest",
+    "pytest-asyncio",
+    "pytest-cov >=3",
+    "coverage",
+    "trame-client[test]",
+    "trame-vuetify",
+    "trame",
+]
+
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build]
+include = [
+    "/src/**/*.py",
+    "/src/trame_router/module/vue3/*.js",
+    "/src/trame_router/module/vue2/*",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = [
+    "src/trame",
+    "src/trame_router",
+]
+
+
+[tool.semantic_release]
+version_toml = [
+    "pyproject.toml:project.version",
+]
+version_variables = [
+    "src/trame_router/__init__.py:__version__",
+]
+build_command = "uv build"
+commit_parser = "conventional"
+
+[tool.semantic_release.publish]
+dist_glob_patterns = ["dist/*"]
+upload_to_vcs_release = true
+
+[tool.ruff]
+line-length = 88
+indent-width = 4
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "W", "F"]
+ignore = []
+fixable = ["ALL"]
+unfixable = []
+
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
+line-ending = "auto"
+docstring-code-format = true
+
+# This only has an effect when the `docstring-code-format` setting is
+# enabled.
+docstring-code-line-length = "dynamic"
+
+[tool.ruff.lint.pycodestyle]
+max-line-length = 120
+
+
+[lint.pydocstyle]
+convention = "google"

@@ -1,4 +1,4 @@
-from trame_router.widgets.router import *
+from trame_router.widgets.router import *  # noqa: F403
 
 
 def initialize(server):
