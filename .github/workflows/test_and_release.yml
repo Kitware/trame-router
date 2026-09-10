@@ -102,6 +102,13 @@ jobs:
     runs-on: ubuntu-latest
     if: github.event_name == 'push'
 
+    environment:
+        name: pypi
+        url: https://pypi.org/p/trame-router
+    permissions:
+          id-token: write # IMPORTANT: mandatory for trusted publishing
+          contents: write # IMPORTANT: mandatory for making GitHub Releases
+
     steps:
       - name: Checkout
         uses: actions/checkout@v6
@@ -134,7 +141,7 @@ jobs:
       - name: Python Semantic Release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: uv run --with python-semantic-release semantic-release version
+        run: uvx --from "python-semantic-release==10.6.2" --with pip semantic-release -v version --commit --tag --vcs-release --changelog
 
       - name: Publish package distributions to PyPI
         if: steps.release.outputs.released == 'true'
