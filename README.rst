@@ -18,7 +18,25 @@ trame-router can be installed with `pip <https://pypi.org/project/trame-router/>
 
 .. code-block:: bash
 
-    pip install --upgrade trame-router
+    pip install trame-router
+
+Development
+-----------------------------------------------------------
+
+.. code-block:: bash
+
+   # Create venv and install all dependencies
+   uv sync --all-extras --dev
+
+   # Activate environment
+   source .venv/bin/activate
+
+   # Install commit analysis
+   pre-commit install
+   pre-commit install --hook-type commit-msg
+
+   # Run pre-commit
+   pre-commit run --all-files
 
 
 Usage

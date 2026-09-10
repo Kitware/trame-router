@@ -18,7 +18,7 @@ export default {
         },
       },
     },
-    outDir: '../trame_router/module/vue3',
+    outDir: '../src/trame_router/module/vue3',
     assetsDir: '.',
     // sourcemap: true,
   },
