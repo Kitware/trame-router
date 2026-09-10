@@ -131,9 +131,16 @@ jobs:
       - name: Python Semantic Release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run:
-          uvx --from "python-semantic-release==10.6.2" --with pip
-          semantic-release -v version --commit --tag --vcs-release --changelog
+        run: |
+          before=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+          uvx --from "python-semantic-release==10.6.2" --with pip semantic-release -v version --commit --tag --vcs-release --changelog
+          after=$(git describe --tags --abbrev=0 2>/dev/null || echo "")
+
+          if [ -n "$after" ] && [ "$after" != "$before" ]; then
+            echo "released=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "released=false" >>"$GITHUB_OUTPUT"
+          fi
 
       - name: Publish package distributions to PyPI
         if: steps.release.outputs.released == 'true'
