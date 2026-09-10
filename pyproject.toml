@@ -1,6 +1,6 @@
 [project]
 name = "trame-router"
-version = "2.3.0"
+version = "2.3.1"
 description = "Vue Router widgets for trame"
 authors = [{ name = "Kitware Inc." }]
 dependencies = [
