@@ -129,6 +129,7 @@ jobs:
           enable-cache: true
 
       - name: Python Semantic Release
+        id: release
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
