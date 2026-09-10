@@ -1,4 +1,4 @@
-.. |pypi_download| image:: https://img.shields.io/pypi/dm/trame-router
+.. |pypi_download| image:: https://kitware.github.io/trame/downloads/trame-router.svg
 
 trame-router enable multi-page navigation |pypi_download|
 ===========================================================================
