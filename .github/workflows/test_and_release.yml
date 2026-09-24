@@ -61,7 +61,7 @@ jobs:
         run: uv run pytest -s ./tests --cov=src --cov-report=xml
 
       - name: Upload Coverage to Codecov
-        uses: codecov/codecov-action@v6
+        uses: codecov/codecov-action@v7
 
   test-npm-build:
     runs-on: ubuntu-latest
